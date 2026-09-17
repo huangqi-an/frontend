@@ -1,0 +1,29 @@
+{
+  "name": "@frontend-lab/playground",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --host 127.0.0.1",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@frontend-lab/core": "workspace:*",
+    "@frontend-lab/ui-react": "workspace:*",
+    "@frontend-lab/ui-vue": "workspace:*",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "vue": "3.5.42"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "@vitejs/plugin-vue": "6.0.9",
+    "typescript": "5.9.3",
+    "vite": "8.3.0",
+    "vue-tsc": "3.3.11"
+  }
+}

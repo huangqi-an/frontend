@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A dual-stack Vue and React playground for the frontend workbench."
+    />
+    <title>Frontend Workbench</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header">
+        <div>
+          <p class="eyebrow">Personal frontend workbench</p>
+          <h1>组件、笔记与实验</h1>
+        </div>
+        <nav aria-label="技术栈导航">
+          <a href="#vue-demo">Vue</a>
+          <a href="#react-demo">React</a>
+        </nav>
+      </header>
+
+      <main class="demo-grid">
+        <section id="vue-demo" class="demo-panel">
+          <p class="eyebrow">Vue 3</p>
+          <h2>Vue 组件预览</h2>
+          <div id="vue-root"></div>
+        </section>
+
+        <section id="react-demo" class="demo-panel">
+          <p class="eyebrow">React 19</p>
+          <h2>React 组件预览</h2>
+          <div id="react-root"></div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
