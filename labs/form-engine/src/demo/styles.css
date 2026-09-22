@@ -23,12 +23,17 @@ code {
 
 button,
 input,
-select {
+select,
+textarea {
   min-height: 38px;
   padding: 8px 10px;
   border: 1px solid #cfd6e2;
   border-radius: 8px;
   font: inherit;
+}
+
+textarea {
+  resize: vertical;
 }
 
 button {
@@ -108,6 +113,11 @@ select:disabled {
   font-style: normal;
 }
 
+.fe-hint {
+  color: #667085;
+  font-size: 12px;
+}
+
 .fe-group-title {
   margin: 0;
   font-weight: 650;
@@ -173,6 +183,20 @@ select:disabled {
   color: #344054;
   font-size: 12px;
   white-space: pre-wrap;
+}
+
+.debug-status {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.debug-status.is-ok {
+  color: #067647;
+}
+
+.debug-status.is-bad {
+  color: #b42318;
 }
 
 @media (max-width: 860px) {

@@ -4,6 +4,7 @@ defineProps<{
   placeholder?: string | undefined;
   disabled?: boolean | undefined;
   required?: boolean | undefined;
+  hint?: string | undefined;
   modelValue?: unknown;
 }>();
 
@@ -26,5 +27,6 @@ function onInput(event: Event): void {
       :disabled="disabled"
       @input="onInput"
     />
+    <small v-if="hint" class="fe-hint">{{ hint }}</small>
   </label>
 </template>
