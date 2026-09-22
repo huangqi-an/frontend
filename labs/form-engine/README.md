@@ -3,7 +3,8 @@
 Vue 3 + TypeScript 的动态表单引擎实验：用只读 schema、业务 model 和运行时字段三层结构，
 支撑表达式联动、声明式副作用和 repeatable 数组字段。
 
-这个目录来自 `labs/` 里的设计草稿（已归档为 [DESIGN.md](./DESIGN.md)）。
+这个目录来自 `labs/` 里的设计草稿。草稿原样归档在 [DESIGN.draft.md](./DESIGN.draft.md)，
+当前实现的逐段导读在 [DESIGN.md](./DESIGN.md)（场景走查 + 核心函数内嵌，读代码前建议先看它）。
 草稿本身是一份 Markdown 代码堆，这里把其中的代码整理成可运行的工程，并修掉了会直接导致运行失败的问题。
 
 ## 运行
@@ -23,7 +24,8 @@ pnpm build
 
 ```text
 form-engine/
-├── DESIGN.md            原始设计草稿
+├── DESIGN.md            当前实现的导读：场景走查 + 核心函数 + 4 张流程图
+├── DESIGN.draft.md      最初的设计草稿（历史存档，不代表现状）
 ├── src/
 │   ├── form-engine/     引擎本体，可整体复制到其他 Vue 3 项目
 │   │   ├── types.ts
